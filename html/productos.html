@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mundo Virtual</title>
+   <link rel="stylesheet" href="/css/productos.css">
+   <!--Icons-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!--Icon pestaña link:favicon-->
+   <link rel="shortcut icon" href="/img/Logo/logoMarca.png" type="image/x-icon">
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<body>
+   <!--header del body-->
+   <header>
+      <!--nav-->
+      <div class="nav">
+         <!--Logo-->
+         <a href="index.html" class="logo">Mundo<span>Virtual</span>
+         </a>
+         <!--link de nav-->
+         <div class="navbar">
+            <li><a href="/html/index.html" class="nav-link">Inicio</a></li>
+            <li><a href="/html/servicios.html" class="nav-link">Servicios</a></li>
+            <li><a href="/html/promociones.html" class="nav-link">Promociones</a></li>
+            <li><a href="/html/productos.html" class="nav-link">Productos</a></li>
+            <li><a href="/html/contactos.html" class="nav-link">Contactos</a></li>
+            
+            <!--Loging-->
+            <div class="login-btn">
+               <span>Login</span>
+               <i class='bx bxs-chevron-down bx-tada bx-flip-horizontal' ></i>
+               
+               <!--Drop Box Login-->
+               <div class="drop-login">
+                  <div class="drop-item">
+                     <a href="#">Area de Clientes</a>
+                     <span>Facturacion & Soporte</span>
+                  </div>
+
+                  <div class="drop-item">
+                     <a href="#">Panel de Juegos</a>
+                     <span>Gestión de juegos</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+               <!-- Menu de iconos-->
+               <div class="menu-icon">
+                  <div class="linea1"></div>
+                  <div class="linea2"></div>
+                  <div class="linea3"></div>
+               </div>
+            </div>
+         </header>
+         
+         <section class="container">
+            <!--Carrito de compras-->
+            <div class="carrito">
+               <di class="header-carrito">
+                  <h2>Tu Carrito de Compras</h2>
+               </di>
+      
+               <div class="carrito-items">
+               <!--  <div class="carrito-item">
+                     <img src="/img/Juegos/Spider-man.jpg" alt="Spider-man" width="80px">
+                     <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Spider-man</span>
+                        <div class="selector-cantidad">
+                           <i class='bx bx-minus-circle restar-cantidad' ></i>
+                           <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                           <i class='bx bx-plus-circle sumar-cantidad'></i>
+                        </div>
+                        <span class="carrito-item-precio">$ 2.500</span>
+                     </div>
+                     <span class="btn-eliminar">
+                        <i class='bx bx-trash'></i>
+                     </span>
+                  </div> -->
+               </div>
+      
+               <div class="carrito-total">
+                  <div class="fila">
+                     <strong>Tu Total:</strong>
+                     <span class="carrito-precio-total">
+                        $ 0,00
+                     </span>
+                  </div>
+                  <button class="btn-pagar">Pagar <i class='bx bxs-shopping-bags'></i></button>
+               </div>
+            </div>
+            
+         <!--contenedor de los elementos-->
+         <div class="container-items">
+         
+         <div class="item">
+            <span class="titulo-item">Spider-man</span>
+            <img src="/img/Juegos/Spider-man.jpg" alt="spider-man" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 2.500</span>
+               <button class="boton-item" data-id="1">Agregar al carrito</button>
+         </div>
+      
+         <div class="item">
+            <span class="titulo-item">Aliens</span>
+            <img src="/img/Juegos/aliens.jpg" alt="aliens" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 3.500</span>
+               <button class="boton-item" data-id="2">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Assasins Creed</span>
+            <img src="/img/Juegos/Assasins Creed.jpg" alt="Assasins Creed" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 4.500</span>
+               <button class="boton-item" data-id="3">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Battlefield</span>
+            <img src="/img/Juegos/Battlefield.jpg" alt="Battlefield" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 5.500</span>
+               <button class="boton-item" data-id="4">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Destiny 2</span>
+            <img src="/img/Juegos/Destiny 2.jpg" alt="Destiny 2" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 2.500</span>
+               <button class="boton-item" data-id="5">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">God of War</span>
+            <img src="/img/Juegos/God of War.jpg" alt="God of War" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 3.500</span>
+               <button class="boton-item" data-id="6">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Injustice 2</span>
+            <img src="/img/Juegos/Injustice 2.jpg" alt="Injustice 2" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 4.500</span>
+               <button class="boton-item" data-id="7">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Jump force</span>
+            <img src="/img/Juegos/Jump force.jpg" alt="Jump force" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 5.500</span>
+               <button class="boton-item"  data-id="8">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Mask</span>
+            <img src="/img/Juegos/mask.jpg" alt="mask" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 2.500</span>
+               <button class="boton-item" data-id="9">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Mortal Combat 11</span>
+            <img src="/img/Juegos/Mortal Combat 11.jpg" alt="Mortal Combat 11" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 3.500</span>
+               <button class="boton-item" data-id="10">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Naruto</span>
+            <img src="/img/Juegos/naruto.jpg" alt="naruto" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 4.500</span>
+               <button class="boton-item" data-id="11">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">NBA 2K 17</span>
+            <img src="/img/Juegos/NBA 2K 17.jpg" alt="NBA 2K 17" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 5.500</span>
+               <button class="boton-item" data-id="12">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Nioh</span>
+            <img src="/img/Juegos/nioh.jpg" alt="nioh" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 2.500</span>
+               <button class="boton-item" data-id="13">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Pess 2019</span>
+            <img src="/img/Juegos/pess 2019.jpg" alt="pess 2019" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 3.500</span>
+               <button class="boton-item" data-id="14">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Pess 2019</span>
+            <img src="/img/Juegos/pess 2019.jpg" alt="pess 2019" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 3.500</span>
+               <button class="boton-item" data-id="15">Agregar al carrito</button>
+         </div>
+         
+         <div class="item">
+            <span class="titulo-item">Pess 2019</span>
+            <img src="/img/Juegos/pess 2019.jpg" alt="pess 2019" class="img-item">
+               <p class="descripcion">Calidad Premiun</p>
+               <span class="precio-item">$ 3.500</span>
+               <button class="boton-item" data-id="16">Agregar al carrito</button>
+         </div>
+         <button class="btn-1" id="load-more">Cargar mas</button>
+      
+      </section>
+
+      <script src="/js/productos.js"></script>
+      <script src="/js/index.js"></script>
+</body>
+</html>
