@@ -3,8 +3,9 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Mundo Virtual</title>
+   <title>Mundo Virtual preguntas</title>
    <link rel="stylesheet" href="/css/index.css">
+   <link rel="stylesheet" href="/css/resposive.css">
    <!--Icons-->
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <!--Icon pestaña link:favicon-->
@@ -24,30 +25,29 @@
          <!--link de nav-->
          <div class="navbar">
             <li><a href="/html/index.html" class="nav-link">Inicio</a></li>
-            <li><a href="#servicios" class="nav-link">Servicios</a></li>
-            <li><a href="#promociones" class="nav-link">Promociones</a></li>
+            <li><a href="/html/promociones.html" class="nav-link">Promociones</a></li>
             <li><a href="/html/productos.html" class="nav-link">Productos</a></li>
-            <li><a href="#contactos" class="nav-link">Contactos</a></li>
+            <li><a href="/html/contactos.html" class="nav-link">Contactos</a></li>
+         
+         <!--Loging-->
+         <div class="login-btn">
+            <span>Login</span>
+            <i class='bx bxs-chevron-down bx-tada bx-flip-horizontal' ></i>
             
-            <!--Loging-->
-            <div class="login-btn">
-               <span>Login</span>
-               <i class='bx bxs-chevron-down bx-tada bx-flip-horizontal' ></i>
-               
-               <!--Drop Box Login-->
-               <div class="drop-login">
-                  <div class="drop-item">
-                     <a href="#">Area de Clientes</a>
-                     <span>Facturacion & Soporte</span>
-                  </div>
+            <!--Drop Box Login-->
+            <div class="drop-login">
+               <div class="drop-item">
+                  <a href="#">Inicio de secion</a>
+                  <span>Usuario y Contraseña</span>
+               </div>
 
-                  <div class="drop-item">
-                     <a href="#">Panel de Juegos</a>
-                     <span>Gestión de juegos</span>
-                  </div>
+               <div class="drop-item">
+                  <a href="#">Registrarse</a>
+                  <span>Nuevo usuario</span>
                </div>
             </div>
          </div>
+      </div>
 
       <!-- Menu de iconos-->
          <div class="menu-icon">
@@ -123,10 +123,81 @@
       </section>
 
 
+<!-- Footer -->
+<footer>
+   <div class="footer-line"></div>
+   <div class="footer-wrapper">
+      <section class="footer-top">
+         <div class="footer-headline">
+            <h2>Suscribete a nuestro sitio</h2>
+            <p>
+               Mantente al dia con nuestras noticioas y articulos
+            </p>
+         </div>
+         <div class="footer-subscribe">
+            <input type="email" placeholder="E-mail">
+            <button class="btn-3">Registrarse</button>
+         </div>
+      </section>
+      <div class="footer-columns">
+         <section class="footer-logo">
+               <img id="logo-emp" src="/img/Logo/logoMarca.png" alt="logo">
+         </section>
+         <section>
+            <h3>Contactos</h3>
+            <ul>
+               <li><a href="/html/contactos.html" title="API">Formulario</a></li>
+               <li><a href="/html/contactos.html" title="Pricing">Telefonos</a></li>
+            </ul>
+         </section>
+         
+         <section>
+            <h3>Productos</h3>
+            <ul>
+               <li><a href="/html/promociones.html" title="Promociones">Promociones</a></li>
+               <li><a href="/html/productos.html" title="Juegos">Juegos</a></li>
+            </ul>
+         </section>
+
+         <section>
+            <h3>Soporte</h3>
+            <ul>
+               <li><a href="/html/preguntas_frecuentes.html" title="Preguntas">Preguntas Frecuentes</a></li>
+               <li><a href="/html/preguntas_frecuentes.html" title="Sobre">Sobre Nosotros</a></li>
+            </ul>
+         </section>
+
+      </div>
+      <div class="footer-bottom">
+         <small>&#169 Mundo Virtual<span id="year"></span> All rights reserved</small>
+         <span class="social-link">
+            <a href="#" title="Instagram">
+               <img src="/img/imagenes/instagram.png" alt="instagram">
+            </a>
+            <a href="#" title="whatsapp">
+               <img src="/img/imagenes/whatsapp.png" alt="whatsapp">
+            </a>
+            <a href="https://www.youtube.com/watch?v=V1TF5QpaFDU&ab_channel=AlfredoAnime" title="Youtube">
+               <img src="/img/imagenes/youtube.png" alt="Youtube">
+            </a>
+            <a href="#" title="Facebook">
+               <img src="/img/imagenes/facebook.png" alt="facebook">
+            </a>
+         </span>
+      </div>
+   </div>
+</footer>
+
+
+
+
 
    <!-- Swiper JS -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
    <!-- JavaScript Link -->
    <script src="/js/index.js"></script>
+
+
+
 </body>
 </html>
