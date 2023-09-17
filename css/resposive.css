@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,500&display=swap');
+
+
+/* variables */
+:root {
+   --lucida-font-family:'Lucida Sans';
+   --body-color:  rgba(24, 37, 216, 0.877);
+   --body-alter-color: #4454ff;
+   --main-color: #e24a55;
+   --hover-color: #cc585e;
+   --container-color: #0f1e8a;
+   --text-alter-color: #0bd2d4;
+   --text-color: #fbfeff;
+   --tricolor-hover:linear-gradient(
+      74deg, 
+      rgb(4, 21, 253, 0.9),  
+      rgb(3, 255, 87, 0.5), 
+      rgb(255, 14, 14, 0.7)
+      );
+      --tricolor-main:linear-gradient(
+         74deg, 
+         rgb(255, 14, 14, 0.4) , 
+         rgb(4, 21, 253, 0.9),
+         rgb(3, 255, 87, 0.5)
+         );
+}
+
+/* Maquetado Responsive */
+@media (max-width:1050px) {
+   .container {
+      margin: 0 auto;
+      width: 92%;
+   }
+}
+@media (max-width: 952px) {
+   .nav {
+      padding: 14px 0;
+   }
+   section {
+      padding: 3rem 0 2rem ;
+   }
+   .inicio-slide {
+      min-height: 560px;
+   }
+   .juegos-content {
+      grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+   }
+   .game-box-game {
+      height: 160px;
+   }
+
+}
+@media (max-width: 850px) {
+   .prices-container{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+   }
+   .price-title {
+      font-size: 2.8rem;
+   }
+}
+@media (max-width: 792px) {
+   .menu-icon {
+      display: flex;
+   }
+   .navbar {
+      position: absolute;
+      top: 0%;
+      right: -100%;
+      width: 300px;
+      height: 100vh;
+      background: var(--container-color);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 25px;
+   }
+   .navbar.open-menu {
+      right: 0;
+      transition: 0.5s;
+   }
+   .nav-link {
+      display: block;
+      margin: 1rem 0;
+   }
+   .login-btn {
+      margin-top: 1.5rem;
+   }
+   .drop-login {
+      left: 0;
+      background: var(--body-color);
+   }
+}
+@media (max-width: 750px) {
+   .inicio-slide {
+      min-height: 500px;
+   }
+   p, 
+   .slide-descripcion,
+   .ser-box p,
+   .control-text p,
+   .preg-text p {
+      font-size: 0.870rem;
+   }
+   .slide-title {
+      font-size: 1.6rem;
+   }
+   .heading, 
+   .acordion-text h2,
+   .acordion-title {
+      font-size: 1.5rem;
+   }
+   footer {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .prices-text {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+   }
+}
+@media (max-width: 640px) {
+   .preg-acordion {
+      flex-direction: column-reverse;
+      gap: 1.5rem;
+   }
+   .acordion-text {
+      flex: 1 1 10rem;
+   }
+}
+@media (max-width: 530px) {
+   .prices-container {
+      grid-template-columns: 1fr;
+   }
+   .price-title {
+      font-size: 1.5rem;
+   }
+   .acordion-title,
+   .prices-descripcion {
+      font-size: 0.85rem;
+   }
+}
+@media (max-width: 440px) {
+   .inicio-slide {
+      min-height: 454;
+   }
+   .juegos {
+      width: 90%;
+   }
+   .game-box-game {
+      height: 190px;
+   }
+   footer {
+      grid-template-columns: 1fr;
+   }
+   .copyright {
+      padding: 20px 0;
+      flex-direction: column;
+      row-gap: 1rem;
+   }
+}
+@media (max-width: 390px) {
+   .navbar {
+      width: 280px;
+   }
+   .servicio-content, .juegos-content {
+      grid-template-columns: 1fr;
+   }
+   .title {
+      font-size: 1.5rem;
+   }
+   .price-subtitle {
+      font-size: 0.9rem;
+   }
+   .price-title {
+      font-size: 1.6rem;
+   }
+   .price-box-img {
+      width: 90px;
+   }
+}
+@media (max-width: 330px) {
+   .navbar {
+      width: 50%;
+   }
+}
