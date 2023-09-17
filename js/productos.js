@@ -225,3 +225,7 @@ function agregarAlCarritoClicked (event){
       var items = document.getElementsByClassName('container-items')[0];
       items.style.width = '60%';
    }
+
+
+
+
