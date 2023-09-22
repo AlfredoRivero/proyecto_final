@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mundo Virtual Contacto</title>
+   <link rel="stylesheet" href="/css/index.css">
+   <link rel="stylesheet" href="/css/resposive.css">
+   <!--Icons-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!--Icon pestaña link:favicon-->
+   <link rel="shortcut icon" href="/img/Logo/logoMarca.png" type="image/x-icon">
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+<body>
+   <!--header del body-->
+   <header>
+      <!--nav-->
+      <div class="nav">
+         <!--Logo-->
+         <a href="index.html" class="logo">Mundo<span>Virtual</span>
+         </a>
+         <!--link de nav-->
+            <div class="navbar">
+               <li><a href="/html/index.html" class="nav-link">Inicio</a></li>
+               <li><a href="/html/promociones.html" class="nav-link">Promociones</a></li>
+               <li><a href="/mercado_pago/cliente/productos.html" class="nav-link">Productos</a></li>
+               <li><a href="/html/contactos.html" class="nav-link">Contactos</a></li>
+            
+            <!--Loging-->
+            <div class="login-btn">
+            </div>
+         </div>
+
+      <!-- Menu de iconos-->
+         <div class="menu-icon">
+            <div class="linea1"></div>
+            <div class="linea2"></div>
+            <div class="linea3"></div>
+         </div>
+      </div>
+   </header>
+
+
+
+   <section class="formulario-container">
+      <form action="https://formsubmit.co/alfredo.rivero8.ar@gmail.com" method="POST">
+         <h2 class="titulo">Formulario de Contacto</h2>
+         <p class="subtitulo">Si tiene alguna Sugerencia, Duda y/o Reclamo</p>
+         <div class="containers">
+            <form action="/action_page.php">
+               <div class="row">
+                  <div class="col-25">
+                     <label for="nombre">Nombre</label>
+                     <i class='bx bx-chevrons-right bx-fade-right' ></i>
+                  </div>
+               <div class="col-75">
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre..">
+               </div>
+               </div>
+               <div class="row">
+                  <div class="col-25">
+                  <label for="apellido">Apellido</label>
+                  <i class='bx bx-chevrons-right bx-fade-right' ></i>
+                  </div>
+               <div class="col-75">
+                  <input type="text" id="apellido" name="apellido" placeholder="Tu Apellido..">
+               </div>
+               </div>
+               <div class="row">
+                  <div class="col-25">
+                  <label for="email">Email</label>
+                  <i class='bx bx-chevrons-right bx-fade-right' ></i>
+               </div>
+               <div class="col-75">
+                  <input type="email" id="imail" name="email" placeholder="Correo electonico..">
+               </div>
+               </div>
+               <div class="row">
+                  <div class="col-25">
+                  <label for="ciudad">Ciudad</label>
+                  <i class='bx bx-chevrons-right bx-fade-right' ></i>
+               </div>
+               <div class="col-75">
+         <select id="ciudad" name="ciudad">
+            <option value="caba">C.A.B.A</option>
+            <option value="cordoba">Cordoba</option>
+            <option value="santaFe">Santa Fe</option>
+         </select>
+               </div>
+               </div>
+               <div class="row">
+                  <div class="col-25">
+                  <label for="consulta">Consulta</label>
+               </div>
+               <div class="col-75">
+                  <textarea id="consulta" name="consulta" placeholder="Escriba su consulta aqui.." style="height:200px"></textarea>
+               </div>
+               </div><br>
+               <div class="row">
+                  <button type="submit" class="btn">Enviar</button>
+               </div>
+         </div>
+            </form>
+      </form>
+   </section>
+
+         <!-- Footer -->
+   <footer>
+      <div class="footer-line"></div>
+      <div class="footer-wrapper">
+         <section class="footer-top">
+            <div class="footer-headline">
+               <h2>Suscribete a nuestro sitio</h2>
+               <p>
+                  Mantente al dia con nuestras noticioas y articulos
+               </p>
+            </div>
+            <div class="footer-subscribe">
+               <form action="https://formsubmit.co/alfredo.rivero8.ar@gmail.com" method="POST">
+                  <label>Nombre
+                     <input type="text" name="name" placeholder="Tu Nombre.." required>
+                  </label>
+                  <label>E-mail
+                     <input type="email" name="email" placeholder="Tu email.." required>
+                  </label>
+                  <button type="submit" class="btn">Registrate</button>
+               </form>
+            </div>
+         </section>
+         <div class="footer-columns">
+            <section class="footer-logo">
+                  <img id="logo-emp" src="/img/Logo/logoMarca.png" alt="logo">
+            </section>
+            
+            <section>
+               <h3>Contactos</h3>
+               <ul>
+                  <li><a href="/html/contactos.html" title="API">Formulario</a></li>
+                  <li><a href="/html/contactos.html" title="Pricing">Telefonos</a></li>
+               </ul>
+            </section>
+            
+            <section>
+               <h3 class="title">Productos</h3>
+               <ul>
+                  <li><a href="/html/promociones.html" title="Promociones">Promociones</a></li>
+                  <li><a href="/html/productos.html" title="Juegos">Juegos</a></li>
+               </ul>
+            </section>
+
+            <section>
+               <h3 class="title">Soporte</h3>
+               <ul>
+                  <li><a href="/html/preguntas_frecuentes.html" title="Preguntas">Preguntas Frecuentes</a></li>
+                  <li><a href="#" title="Sobre">Sobre Nosotros</a></li>
+               </ul>
+            </section>
+
+
+
+         </div>
+         <div class="footer-bottom">
+            <small>&#169 Mundo Virtual<span id="year"></span> Todos los derechos reservados</small>
+      <!--Copyright-->
+   <div class="copyright container">
+      <!-- payments es pagos-->
+      <div class="payments">
+         <i class='bx bxl-visa' ></i>
+         <i class='bx bxl-mastercard' ></i>
+         <i class='bx bxl-paypal' ></i>
+      </div>
+   </div>
+            <span class="social-link">
+               <a href="#" title="Instagram">
+                  <img src="/img/imagenes/instagram.png" alt="instagram">
+               </a>
+               <a href="https://wa.me/5491124025605" title="whatsapp">
+                  <img src="/img/imagenes/whatsapp.png" alt="whatsapp">
+               </a>
+               <a href="https://www.youtube.com/watch?v=V1TF5QpaFDU&ab_channel=AlfredoAnime" title="Youtube">
+                  <img src="/img/imagenes/youtube.png" alt="Youtube">
+               </a>
+               <a href="#" title="Facebook">
+                  <img src="/img/imagenes/facebook.png" alt="facebook">
+               </a>
+            </span>
+         </div>
+      </div>
+   </footer>
+
+
+
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <!-- JavaScript Link -->
+   <script src="/js/index.js"></script>
+
+
+</body>
+</html>

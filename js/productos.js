@@ -168,14 +168,14 @@ function agregarAlCarritoClicked (event){
 
       <div class="carrito-item">
          <img src="${imagenSrc}" alt="" width="80px">
-         <div class="carrito-item-detalles">
+         <div class="carrito-item-detalles" id="product-description">
             <span class="carrito-item-titulo">${titulo}</span>
                <div class="selector-cantidad">
                <i class='bx bx-minus-circle restar-cantidad' ></i>
                   <input type="text" value="1" class="carrito-item-cantidad" disabled>
                   <i class='bx bx-plus-circle sumar-cantidad'></i>
                </div>
-            <span class="carrito-item-precio">${precio}</span>
+            <span class="carrito-item-precio" id="unit-price">${precio}</span>
          </div>
          <span class="btn-eliminar">
          <i class='bx bx-trash-alt'></i>
@@ -225,6 +225,94 @@ function agregarAlCarritoClicked (event){
       var items = document.getElementsByClassName('container-items')[0];
       items.style.width = '60%';
    }
+
+
+
+
+   // mercado pago
+
+// Add SDK credentials
+// REPLACE WITH YOUR PUBLIC KEY AVAILABLE IN: https://developers.mercadopago.com/panel
+const mercadopago = new mercadoPago('<TEST-871df5bd-5577-48dc-9a67-3696cba25dac>', {
+   locale: 'es-AR' // The most common are: 'pt-BR', 'es-AR' and 'en-US'
+});
+
+
+// Handle call to backend and generate preference.
+document.getElementById("checkout-btn").addEventListener("click", function () {
+
+   const orderData = {
+      quantity: document.getElementById("quantity").value,
+      description: document.getElementById("product-description").innerHTML,
+      price: document.getElementById("unit-price").innerHTML
+};
+
+   fetch("http://127.0.0.1:5500/html/productos.html/create_preference", {
+      method: "POST",
+      headers: {
+         "Content-Type": "application/json",
+      },
+      body: JSON.stringify(orderData),
+   })
+      .then(function (response) {
+         return response.json();
+      })
+      .then(function (preference) {
+         createCheckoutButton(preferenceId);
+      })
+      .catch(function () {
+         alert("Unexpected error");
+      });
+});
+
+   function createCheckoutButton(preferenceId) {
+   // Initialize the checkout
+   const bricksBuilder = mercadopago.bricks();
+   const renderComponent = async (bricksBuilder) => {
+      if (window.checkoutButton) window.checkoutButton.unmount();
+      await bricksBuilder.create(
+         'wallet',
+         'button-checkout', // class/id where the payment button will be displayed
+      {
+         initialization: {
+         preferenceId: preferenceId
+         },
+         callbacks: {
+            onError: (error) => console.error(error),
+            onReady: () => {}
+         }
+      }
+   );
+};
+   window.checkoutButton =  renderComponent(bricksBuilder);
+}
+ 
+
+/*
+ // Handle price update
+ function updatePrice() {
+   let quantity = document.getElementById("quantity").value;
+   let unitPrice = document.getElementById("unit-price").innerHTML;
+   let amount = parseInt(unitPrice) * parseInt(quantity);
+ 
+   document.getElementById("cart-total").innerHTML = "$ " + amount;
+   document.getElementById("summary-price").innerHTML = "$ " + unitPrice;
+   document.getElementById("summary-quantity").innerHTML = quantity;
+   document.getElementById("summary-total").innerHTML = "$ " + amount;
+ }
+ 
+ document.getElementById("quantity").addEventListener("change", updatePrice);
+ updatePrice();
+ 
+ // Go back
+ document.getElementById("go-back").addEventListener("click", function () {
+   $(".container_payment").fadeOut(500);
+   setTimeout(() => {
+     $(".shopping-cart").show(500).fadeIn();
+   }, 500);
+   $('#checkout-btn').attr("disabled", false);
+ }); 
+ */
 
 
 
